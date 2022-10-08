@@ -1,0 +1,38 @@
+Методы класса Permutation:
+  Конструкторы:
+    - Permutation(params int[] a)
+  Методы:
+    - Permutation Parse(string)   Парсит подстановку из строки, может выбрасывать исключение
+    - static bool TryParse(string s, out Permutation p)   Знакомы вам TryParse, работает аналогично известным вам
+    - static bool Equals(Permutation p1, Permutation p2)    Сравнивает 2 подстановки
+    - int CountInversions()   Считает число инверсий в перестановке
+    - static Permutation Inversed(Permutation p)    Возвращает перестановку, обратную к p
+    - static Permutation Id(int n)    Возвращает тождественную подстановку [1, 2, 3, ...] длины n
+    - int GetOrder()    Возвращает порядок перестановки. Находит порядок наивным способом, перемножая подстановку саму на себя, хочу это переделать
+    - static bool Check(int[] a)    Проверяет, можно ли создать подстановку из массива a
+    - private static Permutation Swap(Permutation p, int i1, int i2)    Служебный метод, вы его использовать не сможете
+    - int GetParity()   Возвращает знак подстановки. не знаю, почему не назвал sgn
+    - Cycle[] GetCycles()   Возращает массив из циклов, составляющих подстановку
+    - string ToCycles()   Возращает строку из циклов, составляющих подстановку
+    - void Write()    Выводит подстановку в консоль. Выводится только нижняя строка подстановки.
+    - int GetLength()   Длина подстановки
+    - void WriteInfo()    Выводит блок информации про подстановку
+    - void WriteInfo(string name)    Выводит блок информации про подстановку + название
+    - static Permutation[] S(int n)   Возвращает массив представляющий собой множество всех подстановок длины n. Реализовано ужасно, но работает
+    - static void Permute(int k, ref List<Permutation> p, string[] a = null, int i = 0)   Просто не лезьте сюда
+  С операторами (* и ^) разберетесь сами (туториал в Program.cs немного поможет). Оператор ^ особо не тестил, реализован плохо, может не работать с отрицательными показателями степени
+
+Методы класса Cycle
+  Конструкторы:
+    - Cycle(params int[] a)
+  Методы:
+    - int GetMax()    Возвращает максимальный элемент цикла
+    - static bool Check(int[] a)    Проверяет возможность создания цикла из массива a
+    - Permutation ToPermutation()   Возвращает подстановку, соответсвующую циклу
+    - static bool TryParse(string s, out Cycle c)   Ну я даже распинаться не буду
+    - static Cycle Parse(string s)
+    - GetOrder()    Порядок цикла. Написан тоже криво кст
+    - static Permutation ToPermutation(Cycle c, int len)    Примерно то же что и ToPermutation() в другом виде
+    - static Permutation ToPermutation(Cycle c)    Примерно то же что и ToPermutation() в другом виде
+    - public override string ToString()   Возвращает строковое представление цикла
+   С опраторами разберетесь сами
