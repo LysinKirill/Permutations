@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "XLfvpMqCXfqRvY4v1IBYN7GmsepvdYrb47R4CzVIcpHfcXi8Jl5pCFEyv9jx5NKFdzf+Inwxrg5/R7ihbBAFMQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Xiaomi\\RiderProjects\\Permutations\\Permutations\\Permutations.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Xiaomi\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.14\\microsoft.netcore.app.ref.6.0.14.nupkg.sha512",
+    "C:\\Users\\Xiaomi\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.14\\microsoft.windowsdesktop.app.ref.6.0.14.nupkg.sha512",
+    "C:\\Users\\Xiaomi\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.14\\microsoft.aspnetcore.app.ref.6.0.14.nupkg.sha512",
+    "C:\\Users\\Xiaomi\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.14\\microsoft.netcore.app.host.win-x64.6.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}
